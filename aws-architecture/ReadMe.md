@@ -8,13 +8,13 @@ Steps to initialize backend in AWS and manage it with Terraform:
 2. Uncomment the remote backend configuration
 3. Reinitialize with `terraform init`:
 
-    Do you want to copy existing state to the new backend?
-        Pre-existing state was found while migrating the previous "local" backend to the
-        newly configured "s3" backend. No existing state was found in the newly
-        configured "s3" backend. Do you want to copy this state to the new "s3"
-        backend? Enter "yes" to copy and "no" to start with an empty state.
+        Do you want to copy existing state to the new backend?
+            Pre-existing state was found while migrating the previous "local" backend to the
+            newly configured "s3" backend. No existing state was found in the newly
+            configured "s3" backend. Do you want to copy this state to the new "s3"
+            backend? Enter "yes" to copy and "no" to start with an empty state.
 
-        Enter a value: yes 
+            Enter a value: yes 
 
 Now that the S3 bucket and dynamoDB table are provisioned, they are able to be used as the state backend!
 
