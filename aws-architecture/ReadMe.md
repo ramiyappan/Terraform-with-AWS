@@ -4,9 +4,11 @@ Remote backends enable storage of TF state in a remote, location to enable secur
 ### AWS S3 + Dynamo DB
 Steps to initialize backend in AWS and manage it with Terraform:
 
-1. Use config from ./aws-backend/ (init, plan, apply) to provision s3 bucket and dynamoDB table with local state
-2. Uncomment the remote backend configuration
-3. Reinitialize with terraform init:
+<ol>
+<li> Use config from `./aws-backend/` (init, plan, apply) to provision s3 bucket and dynamoDB table with local state
+<li> Uncomment the remote backend configuration
+<li> Reinitialize with `terraform init`:
+</ol>
 
     ```
     Do you want to copy existing state to the new backend?
